@@ -1,7 +1,7 @@
 {
   "name": "@elk-zone/elk",
   "type": "module",
-  "version": "0.12.1",
+  "version": "0.13.0",
   "packageManager": "pnpm@8.15.3",
   "license": "MIT",
   "homepage": "https://elk.zone/",
@@ -60,7 +60,7 @@
     "@upstash/redis": "^1.27.1",
     "@vercel/kv": "^1.0.1",
     "@vue-macros/nuxt": "^1.6.0",
-    "@vueuse/core": "^10.8.0",
+    "@vueuse/core": "^10.9.0",
     "@vueuse/gesture": "^2.0.0",
     "@vueuse/integrations": "^10.8.0",
     "@vueuse/math": "^10.8.0",
