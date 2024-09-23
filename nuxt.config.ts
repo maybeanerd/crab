@@ -8,11 +8,12 @@ import { currentLocales } from './config/i18n'
 const { resolve } = createResolver(import.meta.url)
 
 export default defineNuxtConfig({
+  compatibilityDate: '2024-09-11',
   typescript: {
     tsConfig: {
       exclude: ['../service-worker'],
       vueCompilerOptions: {
-        target: 3.4,
+        target: 3.5,
       },
     },
   },
@@ -260,22 +261,21 @@ export default defineNuxtConfig({
         { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
       ],
       meta: [
-        { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' },
+        { name: 'apple-mobile-web-app-status-bar-style', content: 'default' },
         // open graph social image
-        { property: 'og:title', content: 'Elk' },
+        { property: 'og:title', content: 'crab' },
         { property: 'og:description', content: 'A nimble Mastodon web client' },
         { property: 'og:type', content: 'website' },
-        { property: 'og:image', content: 'https://elk.zone/elk-og.png' },
-        { property: 'og:image:width', content: '3800' },
-        { property: 'og:image:height', content: '1900' },
-        { property: 'og:site_name', content: 'Elk' },
-        { property: 'twitter:site', content: '@elk_zone' },
-        { property: 'twitter:card', content: 'summary_large_image' },
+        { property: 'og:image', content: 'https://raw.githubusercontent.com/maybeanerd/crab/main/public/crab-original.png' },
+        { property: 'og:image:width', content: '552' },
+        { property: 'og:image:height', content: '452' },
+        { property: 'og:site_name', content: 'crab' },
+        { name: 'twitter:card', content: 'summary_large_image' },
       ],
     },
   },
 
-  // eslint-disable-next-line ts/prefer-ts-expect-error
+  // eslint-disable-next-line ts/ban-ts-comment
   // @ts-ignore nuxt-security is conditional
   security: {
     headers: {
@@ -298,7 +298,7 @@ export default defineNuxtConfig({
         'upgrade-insecure-requests': true,
       },
       permissionsPolicy: {
-        fullscreen: ['\'self\'', 'https:', 'http:'],
+        fullscreen: '*',
       },
     },
     rateLimiter: false,
@@ -332,6 +332,10 @@ declare global {
 }
 
 declare module '#app' {
+  interface PageMeta {
+    wideLayout?: boolean
+  }
+
   interface RuntimeNuxtHooks {
     'elk-logo:click': () => void
   }

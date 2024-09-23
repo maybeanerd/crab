@@ -9,6 +9,7 @@ export async function useAsyncIDBKeyval<T>(
   key: IDBValidKey,
   initialValue: MaybeRefOrGetter<T>,
   options: UseIDBOptions = {},
+  source?: Ref<T>,
 ): Promise<RemovableRef<T>> {
   const {
     flush = 'pre',
@@ -19,9 +20,9 @@ export async function useAsyncIDBKeyval<T>(
     },
   } = options
 
-  const data = (shallow ? shallowRef : ref)(initialValue) as Ref<T>
+  const data = source ?? (shallow ? shallowRef : ref)(initialValue) as Ref<T>
 
-  const rawInit: T = toValue(initialValue)
+  const rawInit: T = toValue<T>(initialValue)
 
   async function read() {
     if (!isIDBSupported)

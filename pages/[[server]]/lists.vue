@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script setup lang="ts">
 import type { mastodon } from 'masto'
 
 definePageMeta({
@@ -50,9 +50,11 @@ async function createList() {
 
 function clearError(focusBtn: boolean) {
   actionError.value = undefined
-  focusBtn && nextTick(() => {
-    inputRef.value?.focus()
-  })
+  if (focusBtn) {
+    nextTick(() => {
+      inputRef.value?.focus()
+    })
+  }
 }
 
 function updateEntry(list: mastodon.v1.List) {
