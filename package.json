@@ -1,7 +1,7 @@
 {
   "name": "@maybeanerd/crab",
   "type": "module",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "packageManager": "pnpm@9.11.0",
   "license": "MIT",
   "homepage": "https://crab.bumscode.com/",
