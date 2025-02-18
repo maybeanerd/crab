@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { EditorContent } from '@tiptap/vue-3'
-import stringLength from 'string-length'
 import type { mastodon } from 'masto'
 import type { DraftItem } from '~/types'
+import { EditorContent } from '@tiptap/vue-3'
+import stringLength from 'string-length'
 
 const {
   threadComposer,
@@ -196,6 +196,9 @@ async function toggleSensitive() {
 }
 
 async function publish() {
+  if (isPublishDisabled.value || isExceedingCharacterLimit.value)
+    return
+
   const publishResult = await (threadIsActive.value ? publishThread() : publishDraft())
   if (publishResult) {
     if (Array.isArray(publishResult))
@@ -522,6 +525,7 @@ function stopQuestionMarkPropagation(e: KeyboardEvent) {
                 v-if="!threadIsActive || isFinalItemOfThread"
                 btn-solid rounded-3 text-sm w-full flex="~ gap1" items-center md:w-fit class="publish-button"
                 :aria-disabled="isPublishDisabled || isExceedingCharacterLimit" aria-describedby="publish-tooltip"
+                :disabled="isPublishDisabled || isExceedingCharacterLimit"
                 @click="publish"
               >
                 <span v-if="isSending" block animate-spin preserve-3d>

@@ -334,10 +334,12 @@
     "zen_mode": "ZEN modua"
   },
   "notification": {
+    "and": "eta",
     "favourited_post": "(e)k zure bidalketa gogoko egin du",
     "followed_you": "(e)k jarraitu dizu",
     "followed_you_count": "{0} pertsonak jarraitu dizute|pertsona {0}ek jarraitu dizu|{0} pertsonak jarraitu dizute",
     "missing_type": "MISSING notification.type:",
+    "others": "beste {0}(e)k|beste {0}ek|beste {0}(e)k",
     "reblogged_post": "(e)k zure bidalketari bultzada eman dio",
     "reported": "{0}(e)k {1} salatu du",
     "request_to_follow": "(e)k jarraipen-eskaera bidali dizu",
@@ -535,8 +537,8 @@
     },
     "notifications_settings": "Jakinarazpenak",
     "preferences": {
-      "embedded_media": "Kapsulatutako multimedia erreproduzigailua",
-      "embedded_media_description": "Kapsulatutako erreproduzigailu bat erakusten du partekatutako multimedia jarioen estekak zabaltzean, ez aurrebista txartel arrunta.",
+      "embedded_media": "Txertatutako multimedia erreproduzigailua",
+      "embedded_media_description": "Txertatutako erreproduzigailu bat erakusten du partekatutako multimedia jarioen estekak zabaltzean, aurrebista txartel arruntaren ordez.",
       "enable_autoplay": "Gaitu erreproduzitze automatikoa",
       "enable_data_saving": "Gaitu datu-aurrezlea",
       "enable_data_saving_description": "Aurreztu datuak eranskinen kargatze-automatikoa galarazten.",
@@ -633,6 +635,7 @@
       "dismiss": "Baztertu",
       "read": "Irakurri {0} deskribapena"
     },
+    "pinned": "Finkatutako bidalketa",
     "poll": {
       "count": "{0} boto|boto {0}|{0} boto",
       "ends": "epemuga: {0}",
@@ -713,6 +716,7 @@
     "year_past": "duela 0 urte|aurreko urtean|duela {n} urte"
   },
   "timeline": {
+    "no_posts": "Ez dago bidalketarik!",
     "show_new_items": "Erakutsi {v} elementu berri|Erakutsi elementu berri {v}|Erakutsi {v} elementu berri",
     "view_older_posts": "Oso litekeena da beste instantziatako bidalketa zaharragoak ikusgai ez egotea."
   },

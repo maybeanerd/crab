@@ -334,10 +334,12 @@
     "zen_mode": "Zen Mode"
   },
   "notification": {
+    "and": "and",
     "favourited_post": "favorited your post",
     "followed_you": "followed you",
     "followed_you_count": "{0} people followed you|{0} person followed you|{0} people followed you",
     "missing_type": "MISSING notification.type:",
+    "others": "{0} others|{0} other|{0} others",
     "reblogged_post": "boosted your post",
     "reported": "{0} reported {1}",
     "request_to_follow": "requested to follow you",
@@ -633,6 +635,7 @@
       "dismiss": "Dismiss",
       "read": "Read {0} description"
     },
+    "pinned": "Pinned post",
     "poll": {
       "count": "{0} votes|{0} vote|{0} votes",
       "ends": "ends {0}",
@@ -713,6 +716,7 @@
     "year_past": "0 years ago|last year|{n} years ago"
   },
   "timeline": {
+    "no_posts": "No posts here!",
     "show_new_items": "Show {v} new items|Show {v} new item|Show {v} new items",
     "view_older_posts": "Older posts from other instances may not be displayed."
   },

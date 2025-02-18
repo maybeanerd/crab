@@ -1,16 +1,16 @@
-import { ELEMENT_NODE, TEXT_NODE } from 'ultrahtml'
 import type { ElementNode, Node } from 'ultrahtml'
-import { Fragment, h, isVNode } from 'vue'
 import type { VNode } from 'vue'
-import { RouterLink } from 'vue-router'
-import { decode } from 'tiny-decode'
 import type { ContentParseOptions } from './content-parse'
-import { parseMastodonHTML } from './content-parse'
-import Emoji from '~/components/emoji/Emoji.vue'
-import ContentCode from '~/components/content/ContentCode.vue'
-import ContentMentionGroup from '~/components/content/ContentMentionGroup.vue'
+import { decode } from 'tiny-decode'
+import { ELEMENT_NODE, TEXT_NODE } from 'ultrahtml'
+import { Fragment, h, isVNode } from 'vue'
+import { RouterLink } from 'vue-router'
 import AccountHoverWrapper from '~/components/account/AccountHoverWrapper.vue'
 import TagHoverWrapper from '~/components/account/TagHoverWrapper.vue'
+import ContentCode from '~/components/content/ContentCode.vue'
+import ContentMentionGroup from '~/components/content/ContentMentionGroup.vue'
+import Emoji from '~/components/emoji/Emoji.vue'
+import { parseMastodonHTML } from './content-parse'
 
 function getTextualAstComponents(astChildren: Node[]): string {
   return astChildren
@@ -60,16 +60,40 @@ export function nodeToVNode(node: Node): VNode | string | null {
   }
 
   if ('children' in node) {
-    if (node.name === 'a' && (node.attributes.href?.startsWith('/') || node.attributes.href?.startsWith('.'))) {
-      node.attributes.to = node.attributes.href
+    if (node.name === 'a') {
+      if (node.attributes.href?.startsWith('/') || node.attributes.href?.startsWith('.')) {
+        node.attributes.to = node.attributes.href
 
-      const { href: _href, target: _target, ...attrs } = node.attributes
+        const { href: _href, target: _target, ...attrs } = node.attributes
+        return h(
+          RouterLink as any,
+          attrs,
+          () => node.children.map(treeToVNode),
+        )
+      }
+
+      // fix #3122
       return h(
-        RouterLink as any,
-        attrs,
-        () => node.children.map(treeToVNode),
+        node.name,
+        node.attributes,
+        node.children.map((n: Node) => {
+          // replace span.ellipsis with bdi.ellipsis inside links
+          if (n && n.type === ELEMENT_NODE && n.name !== 'bdi' && n.attributes?.class?.includes('ellipsis')) {
+            const children = n.children.splice(0, n.children.length)
+            const bdi = {
+              ...n,
+              name: 'bdi',
+              children,
+            } satisfies ElementNode
+            children.forEach((n: Node) => n.parent = bdi)
+            return treeToVNode(bdi)
+          }
+
+          return treeToVNode(n)
+        }),
       )
     }
+
     return h(
       node.name,
       node.attributes,
