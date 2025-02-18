@@ -1,3 +1,6 @@
+<script setup lang="ts">
+</script>
+
 <template>
   <img src="@/public/pwa-192x192.png" alt="logo" class="h-10">
 </template>
