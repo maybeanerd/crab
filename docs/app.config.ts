@@ -6,7 +6,7 @@ export default defineAppConfig({
   header: {
     title: 'crab',
     logo: {
-      alt: 'Elk',
+      alt: 'crab logo',
       light: 'https://github.com/maybeanerd/crab/blob/main/public/crab-original.png?raw=true',
       dark: 'https://github.com/maybeanerd/crab/blob/main/public/crab-original.png?raw=true',
     },
@@ -16,7 +16,7 @@ export default defineAppConfig({
     mastodon: 'https://crab.bumscode.com/@maybeanerd',
   },
   github: {
-    url: 'https://github.com/elk-zone/elk',
+    url: 'https://github.com/maybeanerd/crab',
     branch: 'main',
     rootDir: 'docs',
   },
@@ -28,7 +28,7 @@ export default defineAppConfig({
         {
           icon: 'i-ph-shooting-star-duotone',
           label: 'Star on GitHub',
-          to: 'https://github.com/elk-zone/elk',
+          to: 'https://github.com/maybeanerd/crab',
           target: '_blank',
         },
         {

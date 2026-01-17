@@ -1,7 +1,7 @@
 <template>
   <div class="logo">
-    <img alt="Elk" src="/pwa-192x192.png">
-    Elk
+    <img alt="crab" src="/pwa-192x192.png">
+    crab
   </div>
 </template>
 

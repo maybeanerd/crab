@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <img src="@/public/pwa-192x192.png" alt="logo" class="h-10">
+  <img src="/pwa-192x192.png" alt="logo" class="h-10">
 </template>
 
 <style scoped>
