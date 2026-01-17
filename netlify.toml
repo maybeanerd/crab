@@ -4,10 +4,3 @@ command = "pnpm run build"
 
 [build.environment]
 NODE_OPTIONS = '--max-old-space-size=4096'
-
-# Redirect to Discord server
-[[redirects]]
-from = "https://chat.elk.zone"
-to = "https://discord.gg/vAZSDU9J"
-status = 301
-force = true

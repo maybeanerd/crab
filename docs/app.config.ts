@@ -1,34 +1,40 @@
 export default defineAppConfig({
-  docus: {
+  seo: {
     title: 'crab',
-    description: 'A nimble Mastodon web client.',
-    image: 'https://github.com/maybeanerd/crab/blob/main/public/crab-original.png?raw=true',
-    socials: {
-      github: 'maybeanerd/crab',
-      mastodon: {
-        label: 'Mastodon',
-        icon: 'IconMastodon',
-        href: 'https://crab.bumscode.com/@maybeanerd',
-      },
+    description: 'A nimble Mastodon web client with modern features and elegant design.',
+  },
+  header: {
+    title: 'crab',
+    logo: {
+      alt: 'crab logo',
+      light: 'https://github.com/maybeanerd/crab/blob/main/public/crab-original.png?raw=true',
+      dark: 'https://github.com/maybeanerd/crab/blob/main/public/crab-original.png?raw=true',
     },
-    aside: {
-      level: 0,
-      exclude: [],
-    },
-    header: {
-      logo: true,
-      showLinkIcon: true,
-      exclude: [],
-    },
-    footer: {
-      iconLinks: [
+  },
+  socials: {
+    github: 'https://github.com/maybeanerd/crab',
+    mastodon: 'https://crab.bumscode.com/@maybeanerd',
+  },
+  github: {
+    url: 'https://github.com/maybeanerd/crab',
+    branch: 'main',
+    rootDir: 'docs',
+  },
+  toc: {
+    title: 'On this page',
+    bottom: {
+      title: 'Community',
+      links: [
         {
-          href: 'https://nuxt.com',
-          icon: 'IconNuxtLabs',
+          icon: 'i-ph-shooting-star-duotone',
+          label: 'Star on GitHub',
+          to: 'https://github.com/maybeanerd/crab',
+          target: '_blank',
         },
         {
-          href: 'https://crab.bumscode.com/@maybeanerd',
-          icon: 'IconMastodon',
+          icon: 'i-simple-icons-mastodon',
+          label: 'Follow on Mastodon',
+          to: 'https://crab.bumscode.com/@maybeanerd',
         },
       ],
     },

@@ -226,7 +226,9 @@
     "manage": "Gestisci liste",
     "modify_account": "Modifica liste con account",
     "remove_account": "Rimuovi account dalla lista",
-    "save": "Salva modifiche"
+    "save": "Salva modifiche",
+    "search_following_desc": "Cerca le persone che segui",
+    "search_following_placeholder": "Cerca fra le persone che segui"
   },
   "magic_keys": {
     "dialog_header": "Scorciatoie da tastiera",
@@ -334,10 +336,12 @@
     "zen_mode": "Modalità zen"
   },
   "notification": {
+    "and": "e",
     "favourited_post": "ha apprezzato il tuo post",
     "followed_you": "ti ha iniziato a seguire",
     "followed_you_count": "{0} persone ti hanno cominciato a seguire|{0} persona ti ha cominciato a seguire|{0} persone ti hanno cominciato a seguire",
     "missing_type": "notification.type MANCANTE:",
+    "others": "{0} altri|{0} altro|{0} altri",
     "reblogged_post": "ha rebloggato il tuo post",
     "reported": "{0} ha segnalato {1}",
     "request_to_follow": "ti ha chiesto di seguirti",
@@ -557,9 +561,10 @@
       "hide_username_emojis": "Nascondi emoji dai nomi utente",
       "hide_username_emojis_description": "Nasconde le emoji all'interno dei nomi utente nella cronologia. Le emoji saranno comunque visibili nelle pagine dei profili.",
       "label": "Preferenze",
-      "optimize_for_low_performance_device": "Ottimizza per dispositivi a basse prestazioni",
+      "optimize_for_low_performance_device": "Ottimizza per i dispositivi a basse prestazioni",
       "title": "Funzionalità sperimentali",
-      "use_star_favorite_icon": "Usa icona stella per apprezzamenti",
+      "unmute_videos": "Riproduci video con il volume attivo di default",
+      "use_star_favorite_icon": "Usa l'icona della stella per gli apprezzamenti",
       "user_picker": "Selettore utente",
       "user_picker_description": "Mostra gli avatar di tutti gli account connessi in basso a sinistra così da poter cambiare account in un attimo.",
       "virtual_scroll": "Scorrimento virtuale",
@@ -637,7 +642,8 @@
     "poll": {
       "count": "{0} voti|{0} voto|{0} voti",
       "ends": "termina {0}",
-      "finished": "terminato {0}"
+      "finished": "terminato {0}",
+      "update": "Aggiorna sondaggio"
     },
     "replying_to": "In risposta a {0}",
     "show_full_thread": "Mostra discussione",
@@ -670,6 +676,7 @@
     "notifications_mention": "Menzioni",
     "notifications_more_tooltip": "Filtra notifiche per tipo",
     "notifications_poll": "Sondaggio",
+    "notifications_quote": "Citazione",
     "notifications_reblog": "Reblog",
     "notifications_status": "Stato",
     "notifications_update": "Aggiornamento",
@@ -747,7 +754,7 @@
     "add_existing": "Aggiungi account esistente",
     "server_address_label": "Indirizzo istanza Mastodon",
     "sign_in_desc": "Accedi per seguire profili o hashtag, apprezzare, condividere e rispondere a post o interagire dal tuo account su un'altra istanza.",
-    "sign_in_notice_title": "Visualizzando {0} dati pubblici",
+    "sign_in_notice_title": "Visualizzando i dati pubblici di {0}",
     "sign_out_account": "Esci {0}",
     "single_instance_sign_in_desc": "Accedi per seguire profili o hastag, apprezzare condividere o rispondere a post.",
     "tip_no_account": "Se ancora non hai un account Mastodon, {0}.",
