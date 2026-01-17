@@ -70,7 +70,7 @@ exports[`content-rich > collapse mentions 1`] = `
     ><a
       class="u-url mention"
       rel="nofollow noopener noreferrer"
-      to="/m.webtoo.ls/@elk"
+      to="/bumscode.com/@elk"
       ><bdi>@<span>elk</span></bdi></a
     ></span
   >
@@ -78,7 +78,7 @@ exports[`content-rich > collapse mentions 1`] = `
     ><a
       class="u-url mention"
       rel="nofollow noopener noreferrer"
-      to="/m.webtoo.ls/@elk"
+      to="/bumscode.com/@elk"
       ><bdi>@<span>elk</span></bdi></a
     ></span
   >
@@ -87,7 +87,7 @@ exports[`content-rich > collapse mentions 1`] = `
     ><a
       class="u-url mention"
       rel="nofollow noopener noreferrer"
-      to="/m.webtoo.ls/@antfu"
+      to="/bumscode.com/@antfu"
       ><bdi>@<span>antfu</span></bdi></a
     ></span
   >
@@ -103,7 +103,7 @@ exports[`content-rich > collapse mentions 1`] = `
     ><a
       class="u-url mention"
       rel="nofollow noopener noreferrer"
-      to="/m.webtoo.ls/@sxzz"
+      to="/bumscode.com/@sxzz"
       ><bdi>@<span>sxzz</span></bdi></a
     ></span
   >
@@ -111,7 +111,7 @@ exports[`content-rich > collapse mentions 1`] = `
     ><a
       class="u-url mention"
       rel="nofollow noopener noreferrer"
-      to="/m.webtoo.ls/@patak"
+      to="/bumscode.com/@patak"
       ><bdi>@<span>patak</span></bdi></a
     ></span
   >
@@ -144,7 +144,7 @@ exports[`content-rich > group mention > html 1`] = `
     ><a
       class="u-url mention"
       rel="nofollow noopener noreferrer"
-      to="/m.webtoo.ls/@pilipinas@lemmy.ml"
+      to="/bumscode.com/@pilipinas@lemmy.ml"
       ><bdi
         ><span data-type="mention" data-id="pilipinas@lemmy.ml"
           >@pilipinas</span
@@ -196,7 +196,7 @@ exports[`content-rich > hashtag adds bdi 1`] = `
       ><a
         class="mention hashtag"
         rel="nofollow noopener noreferrer"
-        to="/m.webtoo.ls/tags/turkey"
+        to="/bumscode.com/tags/turkey"
         ><bdi>#<span>turkey</span></bdi></a
       ></VMenu
     ></span
@@ -218,7 +218,7 @@ exports[`content-rich > hashtag doesn't add 2 bdi 1`] = `
       ><a
         class="mention hashtag"
         rel="nofollow noopener noreferrer"
-        to="/m.webtoo.ls/tags/turkey"
+        to="/bumscode.com/tags/turkey"
         ><bdi></bdi></a></VMenu
   ></span>
 </p>
@@ -341,7 +341,7 @@ exports[`content-rich > root p includes dir="auto" attr when mixed content 1`] =
       ><a
         class="mention hashtag"
         rel="nofollow noopener noreferrer"
-        to="/m.webtoo.ls/tags/turkey"
+        to="/bumscode.com/tags/turkey"
         ><bdi>#<span>turkey</span></bdi></a
       ></VMenu
     ></span
@@ -355,7 +355,7 @@ exports[`content-rich > root p includes dir="auto" attr when mixed content 1`] =
       ><a
         class="mention hashtag"
         rel="nofollow noopener noreferrer"
-        to="/m.webtoo.ls/tags/%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9"
+        to="/bumscode.com/tags/%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9"
         ><bdi>#<span>العربية</span></bdi></a
       ></VMenu
     ></span
@@ -403,7 +403,7 @@ exports[`content-rich > root p includes dir="auto" attr when mixed content 1`] =
       ><a
         class="mention hashtag"
         rel="nofollow noopener noreferrer"
-        to="/m.webtoo.ls/tags/turkey"
+        to="/bumscode.com/tags/turkey"
         ><bdi>#<span>turkey</span></bdi></a
       ></VMenu
     ></span
@@ -417,7 +417,7 @@ exports[`content-rich > root p includes dir="auto" attr when mixed content 1`] =
       ><a
         class="mention hashtag"
         rel="nofollow noopener noreferrer"
-        to="/m.webtoo.ls/tags/%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9"
+        to="/bumscode.com/tags/%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9"
         ><bdi>#<span>العربية</span></bdi></a
       ></VMenu
     ></span
@@ -435,7 +435,7 @@ exports[`content-rich > shows some collapsed mentions grouped 1`] = `
       ><a
         class="u-url mention"
         rel="nofollow noopener noreferrer"
-        to="/m.webtoo.ls/@antfu"
+        to="/bumscode.com/@antfu"
         ><bdi>@<span>antfu</span></bdi></a
       ></span
     >
@@ -443,7 +443,7 @@ exports[`content-rich > shows some collapsed mentions grouped 1`] = `
       ><a
         class="u-url mention"
         rel="nofollow noopener noreferrer"
-        to="/m.webtoo.ls/@patak"
+        to="/bumscode.com/@patak"
         ><bdi>@<span>patak</span></bdi></a
       ></span
     >
@@ -451,7 +451,7 @@ exports[`content-rich > shows some collapsed mentions grouped 1`] = `
       ><a
         class="u-url mention"
         rel="nofollow noopener noreferrer"
-        to="/m.webtoo.ls/@sxzz"
+        to="/bumscode.com/@sxzz"
         ><bdi>@<span>sxzz</span></bdi></a
       ></span
     ></mention-group
@@ -466,7 +466,7 @@ exports[`content-rich > shows some collapsed mentions inline 1`] = `
     ><a
       class="u-url mention"
       rel="nofollow noopener noreferrer"
-      to="/m.webtoo.ls/@antfu"
+      to="/bumscode.com/@antfu"
       ><bdi>@<span>antfu</span></bdi></a
     ></span
   >

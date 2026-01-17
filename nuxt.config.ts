@@ -166,8 +166,8 @@ export default defineNuxtConfig({
       // our default translation server #76
       translateApi: '',
       // Use the instance where Elk has its Mastodon account as the default
-      defaultServer: 'm.webtoo.ls',
-      singleInstance: false,
+      defaultServer: 'bumscode.com',
+      singleInstance: true,
     },
     storage: {
       fsBase: 'node_modules/.cache/app',
@@ -261,20 +261,18 @@ export default defineNuxtConfig({
       },
       link: [
         { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
-        { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' },
         { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
       ],
       meta: [
         { name: 'apple-mobile-web-app-status-bar-style', content: 'default' },
         // open graph social image
-        { property: 'og:title', content: 'Elk' },
+        { property: 'og:title', content: 'crab' },
         { property: 'og:description', content: 'A nimble Mastodon web client' },
         { property: 'og:type', content: 'website' },
-        { property: 'og:image', content: 'https://elk.zone/elk-og.png' },
-        { property: 'og:image:width', content: '3800' },
-        { property: 'og:image:height', content: '1900' },
-        { property: 'og:site_name', content: 'Elk' },
-        { name: 'twitter:site', content: '@elk_zone' },
+        { property: 'og:image', content: 'https://raw.githubusercontent.com/maybeanerd/crab/main/public/crab-original.png' },
+        { property: 'og:image:width', content: '552' },
+        { property: 'og:image:height', content: '452' },
+        { property: 'og:site_name', content: 'crab' },
         { name: 'twitter:card', content: 'summary_large_image' },
       ],
     },

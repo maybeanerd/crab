@@ -1,19 +1,19 @@
 export default defineAppConfig({
   seo: {
-    title: 'Elk',
+    title: 'crab',
     description: 'A nimble Mastodon web client with modern features and elegant design.',
   },
   header: {
-    title: 'Elk',
+    title: 'crab',
     logo: {
       alt: 'Elk',
-      light: '/logo.svg',
-      dark: '/logo.svg',
+      light: 'https://github.com/maybeanerd/crab/blob/main/public/crab-original.png?raw=true',
+      dark: 'https://github.com/maybeanerd/crab/blob/main/public/crab-original.png?raw=true',
     },
   },
   socials: {
-    github: 'https://github.com/elk-zone/elk',
-    mastodon: 'https://elk.zone/@elk@webtoo.ls',
+    github: 'https://github.com/maybeanerd/crab',
+    mastodon: 'https://crab.bumscode.com/@maybeanerd',
   },
   github: {
     url: 'https://github.com/elk-zone/elk',
@@ -34,8 +34,7 @@ export default defineAppConfig({
         {
           icon: 'i-simple-icons-mastodon',
           label: 'Follow on Mastodon',
-          to: 'https://elk.zone/@elk@webtoo.ls',
-          target: '_blank',
+          to: 'https://crab.bumscode.com/@maybeanerd',
         },
       ],
     },

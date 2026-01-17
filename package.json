@@ -1,10 +1,10 @@
 {
-  "name": "@elk-zone/elk",
+  "name": "@maybeanerd/crab",
   "type": "module",
-  "version": "0.17.3",
+  "version": "0.7.0",
   "packageManager": "pnpm@10.24.0",
   "license": "MIT",
-  "homepage": "https://elk.zone/",
+  "homepage": "https://crab.bumscode.com/",
   "main": "./nuxt.config.ts",
   "scripts": {
     "build": "nuxt build",
